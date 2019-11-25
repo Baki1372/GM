@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sajt</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>	
+		<div id="wrapper1">
+		    <div class="menu">
+				<ul>
+					<li><a href="index.html">POCETNA</a></li>
+					<li><a href="knjige.html">KNJIGE</a></li>
+					<li><a href="serija.html">SERIJA</a></li>
+					<li><a href="porodice.html">PORODICE</a></li>
+				 </ul>
+				   <div id="yt" >
+				    <a href="https://www.facebook.com/GameOfThrones?fref=ts"><img src="images/f.png"></a>
+				   </div>
+				   <div id="yt" >
+				    <a href="https://twitter.com/gameofthrones"><img src="images/t.png"></a>
+				   </div>
+				   <div id="yt" >
+				    <a href="https://plus.google.com/+gameofthrones/posts"><img src="images/g.png"></a>
+				   </div>
+				   
+			</div>
+			<a href="index.html">
+			 <div id="header">
+			    <img src="Images/logo.jpg">
+			 </div>
+			</a>
+			    <div id="wow">
+			      <iframe src="stark.html" width="1000" height="470" style="border:none"></iframe>
+				</div> 	
+				    <div id="txd">
+					  <p align="center">Kuca Starka</p>
+					  <p id="d" align="justify">Kuca Starka je jedna od velikih kuca Vesterosa koja vlada prostranom oblascu poznatom kao Sever. To je svakako najstarija porodica koja tvrdi da vuce poreklo od pre osam hiljada godina. Pre nego sto su ih osvojili Targarjeni, vodje kuce Starka su vladali Severom kao Kraljevi Severa.</p>
+					</div>
+					    <div class="kockica">
+					     <div class="prvi">
+					      <ul>
+					        <li>Lord Edard Stark, glava porodice.</li>
+					        <li>Njegova supruga, Ledi Kejtlin od kuce Tuli.</li>
+					        <li>Njihov najstariji sin i Edardov naslednik, Rob Stark.</li>
+					        <li>Njihova najstarija kcerka, Sansa Stark.</li>
+					        <li>Njihova najmladja kcerka, Arja Stark.</li>
+							<li>Njihov mladji sin, Bren Stark.</li>
+							<li>Njihov najmladji sin, Rikon Stark.</li>
+							<li>Edardovo kopile od nepoznate majke, Dzon Snezni.</li>
+							<li>Edardov mladji brat, Bendzen Stark, pripadnik Noćne Straze.</li>
+				          </ul>
+				         </div>
+					     <div class="prvi">
+						  <ul>
+					        <li>Simbol: Jezovuk na ledeno-belom polju </li>
+					        <li>Moto Starka: "Zima dolazi"</li>
+					        <li>Kraljevstvo: Sever</li>
+					        <li>Zamak: Zimovrel</li>
+				          </ul>
+				          
+				          
+				          <fieldset>
+						    <legend> Nasumičan izbor člana kuće Stark </legend>
+						    
+						    <div>
+							Pol:                  
+							<label>                      
+							    <input name="pol" value="M" type="radio"> M                      
+							</label>
+							    
+							<label>                      
+							    <input name="pol" value="Ž" type="radio"> Ž                     
+							</label> 
+						    </div>
+						    
+						    <div>                  
+							<input value="Generiši" id="dugme" type="button">
+						    </div>
+						    
+						    <div>                  
+							<label>
+							    Rezultat: 
+							    <br>
+							    <input name="rezultat" id="rezultat" readonly="readonly" type="text">
+							</label>
+						    </div>
+						    
+						    
+						</fieldset>
+						<script type="text/javascript">
+						    document.querySelector("#dugme").onclick = function(){
+						
+							var muskarci = ["Brandon the Builder", "Brandon the Breaker", "Benjen", "Bran", "Cregan", "Eddard", "Jon", "Karon", "Osric", "Rickard", "Rickon", "Robb", "Rodik", "Theon", "Dorren", "Torrhen"]
+							
+							var zene = ["Arya", "Catelyn", "Lyanna", "Sansa", "Talisa"]
+						    
+							pol = document.querySelectorAll("input[name='pol']");
+							
+							
+							if(pol[0].checked){
+							    var rand_ind = Math.floor(Math.random()*muskarci.length);
+							    
+							    document.querySelector("#rezultat").value = muskarci[rand_ind] + " Stark";
+							    
+							    
+							    
+							}
+							else if(pol[1].checked){
+							    var rand_ind = Math.floor(Math.random()*zene.length);
+							    document.querySelector("#rezultat").value = zene[rand_ind] + " Stark";
+							
+							}
+							else{
+							    document.querySelector("#rezultat").value = "Nije izabran pol!";
+							
+							}
+						    
+						    
+							return true;
+						    }
+						
+						</script>
+				          
+				          
+					</div>       
+				    </div>  
+
+				    <footer>
+
+						 <div class="logic">
+						  <img src="Images/logic.png">
+						 </div>
+						 
+						 <div class="rights">
+						  <ul>
+						    <li>Authors:Boško Vukadinović, Nikola Barać, Darko Vasić</li>
+							<li>All rights resrved</li>
+							<li>Contact:000-000-000</li>
+						  </ul>
+						 </div>
+
+						<div id = "date">
+						<script>
+							document.getElementById("date").style.color = "white";
+							document.getElementById("date").innerHTML = new Date();
+						</script>
+						</div>
+
+					</footer> 
+						
+		</div>
+	</body>
+</html>

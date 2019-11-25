@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sajt</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>	
+		<div id="wrapper1">
+		    <div class="menu">
+				<ul>
+					<li><a href="index.html">POCETNA</a></li>
+					<li><a href="knjige.html">KNJIGE</a></li>
+					<li><a href="serija.html">SERIJA</a></li>
+					<li><a href="porodice.html">PORODICE</a></li>
+				 </ul>
+				   <div id="yt" >
+				    <a href="https://www.facebook.com/GameOfThrones?fref=ts"><img src="images/f.png"></a>
+				   </div>
+				   <div id="yt" >
+				    <a href="https://twitter.com/gameofthrones"><img src="images/t.png"></a>
+				   </div>
+				   <div id="yt" >
+				    <a href="https://plus.google.com/+gameofthrones/posts"><img src="images/g.png"></a>
+				   </div>
+				   
+			</div>
+			<a href="index.html">
+			 <div id="header">
+			    <img src="Images/logo.jpg">
+			 </div>
+			</a>
+			    <div id="wow">
+			      <iframe src="barateon.html" width="1000" height="470" style="border:none"></iframe>
+				</div> 	
+				    <div id="txd">
+					  <p align="center">Kuca Barateona</p>
+					  <p id="d" align="justify">Kuca Barateona je jedna od velikih kuca Vesterosa, iako je medju najmladjima. Trenutno se ona nalazi na prestolu.</p>
+					</div>
+					    <div class="kockica">
+					     <div class="prvi">
+					      <ul>
+					        <li>Kralj Robert Barateon, glava porodice i Kralj Gvozdenog Prestola</li>
+					        <li>Njegova supruga, kraljica Sersei od kuce Lanistera.</li>
+					        <li>Njihov najstariji sin i Robertov naslednik, Dzofri Barateon.</li>
+					        <li>Njihova kcerka, Mirsela Barateon.</li>
+					        <li>Njihov najmladji sin, Tomen Barateon.</li>
+							<li>Robertov mladji brat, Stanis Barateon.</li>
+							<li>Robertov najmladji brat, Renli Barateon.</li>
+				          </ul>
+				         </div>
+					     <div class="prvi">
+						  <ul>
+					        <li>Simbol: Crni jelen na zlatnom polju  </li>
+					        <li>Moto Barateona: "Nas je gnev"</li>
+					        <li>Kraljevstvo: Krajoluj</li>
+					        <li>Zamak: Krajoluj</li>
+				          </ul>
+				          
+				          <fieldset>
+						    <legend> Nasumičan izbor člana kuće Barateon </legend>
+						    
+						    <div>
+							Pol:                  
+							<label>                      
+							    <input name="pol" value="M" type="radio"> M                      
+							</label>
+							    
+							<label>                      
+							    <input name="pol" value="Ž" type="radio"> Ž                     
+							</label> 
+						    </div>
+						    
+						    <div>                  
+							<input value="Generiši" id="dugme" type="button">
+						    </div>
+						    
+						    <div>                  
+							<label>
+							    Rezultat: 
+							    <br>
+							    <input name="rezultat" id="rezultat" readonly="readonly" type="text">
+							</label>
+						    </div>
+						    
+						    
+						</fieldset>
+						<script type="text/javascript">
+						    document.querySelector("#dugme").onclick = function(){
+						
+							var muskarci = ["Steffon", "Axel", "Borros", "Edric", "Flynn", "Lyonel", "Stannis", "Gendry", 
+							    "Tommard", "Mychal", "Ormund", "Oris", "Padraic", "Pertyr", "Raymont", "Reginald", "Renly", 
+							    "Robert", "Wilyam"]
+							
+							var zene = ["Argella", "Cassana", "Ethelide", "Selyse", "Shireen", "Theresa"]
+						    
+							pol = document.querySelectorAll("input[name='pol']");
+							
+							
+							if(pol[0].checked){
+							    var rand_ind = Math.floor(Math.random()*muskarci.length);
+							    
+							    document.querySelector("#rezultat").value = muskarci[rand_ind] + " Baratheon";
+							    
+							    
+							    
+							}
+							else if(pol[1].checked){
+							    var rand_ind = Math.floor(Math.random()*zene.length);
+							    document.querySelector("#rezultat").value = zene[rand_ind] + " Baratheon";
+							
+							}
+							else{
+							    document.querySelector("#rezultat").value = "Nije izabran pol!";
+							
+							}
+						    
+						    
+							return true;
+						    }
+						    
+						    
+						    
+						    
+						</script>
+				          
+					</div>
+				    </div>  
+
+				    <footer>
+
+						 <div class="logic">
+						  <img src="Images/logic.png">
+						 </div>
+						 
+						 <div class="rights">
+						  <ul>
+						    <li>Authors:Boško Vukadinović, Nikola Barać, Darko Vasić</li>
+							<li>All rights resrved</li>
+							<li>Contact:000-000-000</li>
+						  </ul>
+						 </div>
+
+						<div id = "date">
+						<script>
+							document.getElementById("date").style.color = "white";
+							document.getElementById("date").innerHTML = new Date();
+						</script>
+						</div>
+
+					</footer>   
+					
+				  
+		</div>
+	</body>
+</html>

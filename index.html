@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<title>Sajt</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>	
+		<div id="wrapper1">
+		    <div class="menu">
+				<ul>
+					<li><a href="index.html">POCETNA</a></li>
+					<li><a href="knjige.html">KNJIGE</a></li>
+					<li><a href="serija.html">SERIJA</a></li>
+					<li><a href="porodice.html">PORODICE</a></li>
+					<li><a id = "spoiler" href="index.html" onclick="spoilerFunction()">SPOILERS</a></li>
+					<script>
+					function spoilerFunction() {
+					  alert('Svi umiru!!');
+					  $("#spoiler").remove();
+					}
+					</script>
+
+				 </ul>
+				   <div id="yt" >
+				    <a href="https://www.facebook.com/GameOfThrones?fref=ts"><img src="images/f.png"></a>
+				   </div>
+				   <div id="yt" >
+				    <a href="https://twitter.com/gameofthrones"><img src="images/t.png"></a>
+				   </div>
+				   <div id="yt" >
+				    <a href="https://plus.google.com/+gameofthrones/posts"><img src="images/g.png"></a>
+				   </div>
+				   
+			</div>
+			 <div id="header">
+			    <img src="Images/logo.jpg" onclick = "logoClickedFunction()">
+			    <script>
+					function logoClickedFunction() {
+					  $("#spoiler").remove();
+					}
+					</script>
+
+			 </div>
+
+
+			    <div id="wow">
+			      <iframe src="indexic.html" width="1000" height="470" style="border:none"></iframe>
+				</div> 	
+				    <div id="tx">
+					  <p align="center">O seriji</p>
+					  <p id="d" align="justify">Igra prestola (engl. Game of Thrones) je televizijska serija cija je prva sezona od deset epizoda, zasnovana na istoimenom romanu Dzordza R. R. Martina iz njegovog serijala po imenu Pesma leda i vatre (engl. A Song of Ice and Fire) u produkciji kablovske televizijske mreze HBO (engl. HBO), premijerno emitovana u aprilu, maju i junu 2011. Tvorci serije su Dejvid Beniof i D. B. Vajs a serija je snimana u studiju u Belfastu kao i na drugim lokacijama u Severnoj Iurskoj, Malti, Hrvatskoj, Islandu, Marokou i Skotskoj.Radnja serije smestena je na fiktivnim kontinentima Vesterosa i Esosa i prati dogadjaje clanova nekoliko plemickih porodica u borbi za Gvozdeni presto i vlast nad Sedam kraljevstva kao i dolazak zime i misticnih bica sa severa. Serija se bavi temama kao sto su socijalna hijerarhija, religija, lojalnost, seksualnost, gradjanski rat i kriminal.Igra prestola je dobila odlicne kritike i pridobila veliki broj fanova. Serija je nominovana za Emi nagradu za najbolju seriju za sve tri sezone kao i za Zlatni globus i Hugo nagradu dok je Piter Dinklidz osvojio Emi nagradu za najboljeg sporednog glumca u dramskoj seriji kao i Zlatni globus za najboljeg sporednog glumca u seriji, mini-seriji ili TV filmu za ulogu Tiriona Lanistera.Rad na seriji počeo je janauara 2007. kada su i oktupljena prava. Budzet serije iznosi 50-60 miliona americkih dolara u rangu Rima. Za snimanje premijerne epizode potroseno je izmedju 5 i 10 miliona dolara.Prva sezona snimana je u Severnoj Irskoj i Malti, dok je druga sezona snimana i u Dubrovniku.
+
+					  Za snimanje druge sezone budzet je uvecan za 25% kako bi se verodostojno prikazao gradjanski rat i borba za presto oko cega je i baziran najveci deo desavanja.</p>
+					</div>
+			
+				    <footer>
+
+						 <div class="logic">
+						  <img src="Images/logic.png">
+						 </div>
+
+						 <div class="rights">
+						  <ul>
+						    <li>Authors:Boško Vukadinović, Nikola Barać, Darko Vasić</li>
+							<li>All rights resrved</li>
+							<li>Contact:000-000-000</li>
+						  </ul>
+						 </div>
+
+						<div id = "date">
+						<script>
+							document.getElementById("date").style.color = "white";
+							document.getElementById("date").innerHTML = 'Vreme: ' + new Date();
+						</script>
+						</div>
+
+						<div id = "os">
+						<script>
+							document.getElementById("os").style.color = "white";
+							document.getElementById("os").innerHTML = "Operativni sisem: " + navigator.platform;
+						</script>
+						</div>
+
+						<div id = "lang">
+						<script>
+							document.getElementById("lang").style.color = "white";
+							document.getElementById("lang").innerHTML = "Jezik: " + navigator.language;
+							document.getElementById("lang").style.marginBottom = "50px";
+						</script>
+						</div>
+						
+					</footer>  
+
+		</div>
+	</body>
+</html>
